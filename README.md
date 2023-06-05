@@ -1,8 +1,8 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 # Simplicate
-![Social-card-Simplicate](https://github.com/ArexanK/proof-of-concept-Simplicate/assets/94745953/86d03b39-f030-46da-a7a4-5d30a29e8c4a)
 
+![simplicate](https://github.com/ArexanK/proof-of-concept-Simplicate/assets/94745953/c133238a-359d-496a-9de5-3f4d923f99dd)
 
 ## Inhoudsopgave
 
