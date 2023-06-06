@@ -14,9 +14,7 @@
   * [Licentie ⚙️](#licentie)
 
 ## Beschrijving 📝
-<!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Maak een Narrowcasting app met één of meer informatie-panelen, die getoond kan worden op een Tv- scherm in een kantoor van een bedrijf die Simplicate gebruikt.
 
 ## Gebruik 🖇
 <!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
