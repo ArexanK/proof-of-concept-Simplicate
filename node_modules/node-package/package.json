@@ -1,0 +1,47 @@
+{
+  "name": "node-package",
+  "version": "1.4.0",
+  "description": "Node Package Web Component",
+  "main": "dist/node-package.js",
+  "module": "dist/node-package.js",
+  "unpkg": "dist/node-package.min.js",
+  "types": "dist/node-package.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abraham/node-package.git"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "node-package",
+    "npm",
+    "web-component",
+    "nutmeg"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abraham/node-package/issues"
+  },
+  "homepage": "https://github.com/abraham/node-package",
+  "scripts": {
+    "build": "npx nutmeg build .",
+    "prebuild": "npx nutmeg clean .",
+    "prepare": "npm run build -- --production",
+    "pretest": "npm run build",
+    "start": "npx nutmeg serve .",
+    "test": "npx nutmeg test .",
+    "watch": "npx nutmeg watch ."
+  },
+  "dependencies": {
+    "@abraham/remotedata": "0.8.0",
+    "@nutmeg/seed": "0.17.0",
+    "lit-html": "1.1.2"
+  },
+  "devDependencies": {
+    "@nutmeg/cli": "0.17.0"
+  }
+}

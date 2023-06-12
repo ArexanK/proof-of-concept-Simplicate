@@ -1,0 +1,35 @@
+{
+  "name": "proof-of-concept-simplicate",
+  "version": "1.0.0",
+  "description": "Narrowcasting app voor Simplicate",
+  "main": "server.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArexanK/proof-of-concept-Simplicate.git"
+  },
+  "keywords": [
+    "node",
+    "ejs",
+    "express"
+  ],
+  "author": "Arexan Kheyrdoon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArexanK/proof-of-concept-Simplicate/issues"
+  },
+  "homepage": "https://github.com/ArexanK/proof-of-concept-Simplicate#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "node-package": "^1.4.0"
+  }
+}
