@@ -8,10 +8,8 @@ const url = 'https://demofdnd.simplicate.app/api/v2'
 dotenv.config()
 
 
-const projectURL = url + '/projects/project?limit=6&authorization=' + process.env.AuthenticationKey + '&output=json'
-
-
-
+const projectURL = url + 'projects/project?limit=6&authorization=' + process.env.AuthenticationKey
+const data = await fetch(url).then((response) => response.json())
 
 
 // Maak een nieuwe express app
@@ -23,7 +21,6 @@ app.use(express.json())
 app.use(express.urlencoded({
     extended: true
 }))
-
 
 
 // Stel in hoe we express gebruiken
@@ -41,14 +38,6 @@ app.get('/', (request, response) => {
                 return results.name.includes(request.query.name)
             })
         }
-
-
-
-
-
-
-
-        // console.log("hier staat de log van dataclone", dataClone)
         response.render('index', dataClone)
     });
 });
