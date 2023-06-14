@@ -1,63 +1,46 @@
 import express from 'express'
 import * as dotenv from 'dotenv'
 
-
-
-
-// function getFetch() {
-const url = 'https://demofdnd.simplicate.app/api/v2/projects/project'
-const projectUrl = url + '?limit=6' + process.env.AuthenticationKey + process.env.AuthenticationSecret
+const url = 'https://demofdnd.simplicate.app/api/v2'
 
 
 // activate dotenv
 dotenv.config()
 
 
+const projectURL = url + 'projects/project?limit=6&authorization=' + process.env.AuthenticationKey
+const data = await fetch(url).then((response) => response.json())
+
+
 // Maak een nieuwe express app
 const app = express()
+
+
+// Stel afhandeling van formulieren in
+app.use(express.json())
+app.use(express.urlencoded({
+    extended: true
+}))
+
 
 // Stel in hoe we express gebruiken
 app.set('view engine', 'ejs')
 app.set('views', './views')
 app.use(express.static('public'))
 
-
+// Maak een route voor de index
 app.get('/', (request, response) => {
-    let projectUrl = url + '/name'
+    fetchJson(projectURL).then((data) => {
+        //         let dataClone = structuredClone(data);
 
-    fetchJson(projectUrl).then((data) => {
-        response.render('index', data)
-    })
-})
-
-
-
-
-
-
-
-
-// fetch(url)
-//     .then(res => res.json()) //parse response van JSON
-//     .then(data => {
-//         console.log(data)
-//     })
-
-//     .catch(err => {
-//         console.log(`error ${err}`)
-//     })
-
-
-
-
-
-
-
-
-
-
-
-
+        //         if (request.query.name) {
+        //             dataClone.results.name = dataClone.results.name.filter(function (name) {
+        //                 return results.name.includes(request.query.name)
+        //             })
+        //         }
+        response.render('index', dataClone)
+    });
+});
 
 
 

@@ -12,6 +12,13 @@ body {
     font-family: system-ui, sans-serif;
 }
 
+.logo {
+
+    padding-bottom: 5em;
+    top: 10%;
+}
+
+
 
 section {
     display: flex;
@@ -51,7 +58,7 @@ nav a:nth-child(1) {
 
 .squares li {
     position: absolute;
-    display: block;
+    display: inline-block;
     list-style: none;
     width: 100%;
     height: 100%;
@@ -222,93 +229,17 @@ h2 {
 
 
 .glass-box h1 {
-    font-size: 12vmin;
+    font-size: 8vmin;
     color: rgba(194, 189, 216, 0.8);
     text-shadow: 0 0 30px rgba(255, 255, 255, 0.534);
 }
 
 
-/* ---------------------------------------ANIMATION SIMPLICITY H1--------------------*/
 
-
-.section {
-    width: 100%;
-    height: 100%;
-
-}
-
-.simplicate-animation {
-    display: inline-block;
-}
-
-.middle-letters,
-.end-letters {
-    display: inline-block;
-    overflow: hidden;
-    height: 1.5em;
-}
-
-.end-letters {
-    color: #ffffff;
-}
-
-.middle-letters {
-    color: #ffffff;
-}
-
-.middle-letters {
-    animation: simplicate-middle-letters-animation 5s infinite;
-    animation-delay: -3s;
-    max-width: 0;
-}
-
-
-@keyframes simplicate-middle-letters-animation {
-    0% {
-        max-width: 500px;
-    }
-
-    25% {
-        max-width: 0;
-    }
-
-    75% {
-        max-width: 0;
-    }
-
-    90% {
-        max-width: 500px;
-    }
-
-    100% {
-        max-width: 500px;
-    }
-}
-
-@keyframes simplicate-alternate-middle-letters-animation {
-    0% {
-        max-width: 0;
-    }
-
-    25% {
-        max-width: 0;
-    }
-
-    50% {
-        max-width: 500px;
-    }
-
-    75% {
-        max-width: 0;
-    }
-
-    100% {
-        max-width: 0;
-    }
-}
 
 
 /* -----------------------------------BOX WITH DATA---------------------------*/
+
 
 
 .glass-box {
@@ -316,10 +247,13 @@ h2 {
     flex-direction: column;
     align-items: center;
 
+    animation: carousel 3x linear infinite;
+
+
 }
 
 article {
-    background-color: rgb(245, 245, 245);
+    background-color: rgba(194, 189, 216, 0.8);
     text-align: center;
     font-size: 1rem;
     color: #000000;
@@ -327,4 +261,27 @@ article {
     width: 900px;
     height: 100px;
 
+    display: block;
+    object-fit: cover;
+
+
+
+}
+
+
+
+
+
+.container {
+
+    max-width: 1650px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+
+}
+
+@keyframes container {
+    100% {
+        transform: translateX(-250);
+    }
 }
