@@ -1,17 +1,15 @@
 import express from 'express'
 import * as dotenv from 'dotenv'
-
-
-
-
-// function getFetch() {
-const url = 'https://demofdnd.simplicate.app/api/v2/projects/project'
-const projectUrl = url + '?limit=6' + process.env.AuthenticationKey + process.env.AuthenticationSecret
-
+// import fetch from "node-fetch";
 
 // activate dotenv
 dotenv.config()
 
+const headers = {
+    'Accept': 'application/json',
+    'Authentication-Key': process.env.AuthenticationKey,
+    'Authentication-Secret': process.env.AuthenticationSecret
+}
 
 // Maak een nieuwe express app
 const app = express()
@@ -22,44 +20,19 @@ app.set('views', './views')
 app.use(express.static('public'))
 
 
-app.get('/', (request, response) => {
-    let projectUrl = url + '/name'
+// Route for fetching API data
+app.get("/", async (req, res) => {
+    const response = await fetch('https://demofdnd.simplicate.app/api/v2/projects/project?limit=6', {
+        headers: headers
+    });
+    const data = await response.json();
 
-    fetchJson(projectUrl).then((data) => {
-        response.render('index', data)
-    })
+    console.log(data);
+
+    res.render("index", {
+        data: data
+    });
 })
-
-
-
-
-
-
-
-
-// fetch(url)
-//     .then(res => res.json()) //parse response van JSON
-//     .then(data => {
-//         console.log(data)
-//     })
-
-//     .catch(err => {
-//         console.log(`error ${err}`)
-//     })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Stel het poortnummer in en start express
 app.set("port", process.env.PORT || 5050);

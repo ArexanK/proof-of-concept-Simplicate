@@ -9,21 +9,31 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     height: auto;
-    font-family: system-ui, sans-serif;
+    font-family: sans-serif;
 }
 
-.logo {
 
-    padding-bottom: 5em;
-    top: 10%;
+.logo svg {
+
+    justify-content: left;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 100px;
+
+    padding: 10px;
+
+
 }
-
 
 
 section {
     display: flex;
     justify-content: center;
-    margin: 250px auto;
+    margin: 80px auto;
     width: 600px;
     flex-direction: column;
     text-align: center;
@@ -66,6 +76,19 @@ nav a:nth-child(1) {
     animation: animate 8s linear infinite;
     bottom: -150px;
 }
+
+/* Eventueel, ooit, maybe :)
+.squares li {
+    position: absolute;
+    display: inline-block;
+    list-style: none;
+    width: var(--w, 100%);
+    height: var(--h, 100%);
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate var(--du, 8s) linear infinite;
+    bottom: -150px;
+}
+*/
 
 .squares li:nth-child(1) {
     left: 25%;
@@ -189,7 +212,7 @@ nav a:nth-child(1) {
 
 
 
-/*------------------------------------------GLASS CONTAINER------------------------*/
+/*------------------------------------------GRID CONTAINER------------------------*/
 
 
 h2 {
@@ -197,91 +220,21 @@ h2 {
 
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 20rem;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-left: 5em;
+    align-items: flex-start;
+    margin-bottom: 5em;
 
 }
 
-.glass-box {
-    width: 150vmin;
-    height: 80vmin;
-    border-radius: 20px;
-    margin-bottom: 20%;
-
-    backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.02);
-    box-shadow: 0px 20px 20px 20px rgba(255, 255, 255, 0.3);
-
-
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-}
-
-
-.glass-box h1 {
-    font-size: 8vmin;
-    color: rgba(194, 189, 216, 0.8);
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.534);
-}
-
-
-
-
-
-/* -----------------------------------BOX WITH DATA---------------------------*/
-
-
-
-.glass-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    animation: carousel 3x linear infinite;
-
-
-}
-
-article {
-    background-color: rgba(194, 189, 216, 0.8);
-    text-align: center;
-    font-size: 1rem;
-    color: #000000;
-    border: .5px solid rgb(153, 144, 144);
-    width: 900px;
-    height: 100px;
-
-    display: block;
-    object-fit: cover;
-
-
-
-}
-
-
-
-
-
-.container {
-
-    max-width: 1650px;
-    margin: 0 auto;
-    /* overflow: hidden; */
-
-}
-
-@keyframes container {
-    100% {
-        transform: translateX(-250);
-    }
+.box {
+    background-color: white;
+    padding: 10px;
+    width: 400px;
+    height: 300px;
+    border-radius: 1rem;
+    background-color: gainsboro;
 }
