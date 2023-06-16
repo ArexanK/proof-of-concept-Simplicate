@@ -25,6 +25,12 @@ app.get("/", async (req, res) => {
     const response = await fetch('https://demofdnd.simplicate.app/api/v2/projects/project?limit=6', {
         headers: headers
     });
+
+    const response = await fetch('https://demofdnd.simplicate.app/api/v2/hrm/timetable?limit=5', {
+        headers: headers
+    });
+
+
     const data = await response.json();
 
     console.log(data);

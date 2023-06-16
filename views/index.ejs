@@ -21,11 +21,30 @@
         
 
         <div class="grid-container">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+            <div class="box">
+                <h1 class="box-title">Alle klanten op de kaart</h1>
+            </div>
+            <div class="box">
+                <h1 class="box-title">Aankomende verjaardagen</h1>
+            </div>
+            <div class="box"style="grid-row: span 2;">
+            <h1 class="box-title"> Nieuwste projecten</h1>
+
+            <dl>
+                <dt>Nieuwste projecten</dt>
+                <dd><%= data[0].name %></dd>
+                <dd><%= data[0].start_date %></dd>
+                <dd><%= project_manager[0].name %></dd>
+                </dl>
+
+        </div>
+            <div class="box">
+                <h1 class="box-title">Geschreven Uren </h1>
+            </div>
+
+            <div class="box">
+                <h1 class="box-title"> </h1> 
+            </div>
           </div>
 
     <div class="area">
