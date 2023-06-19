@@ -33,9 +33,9 @@ Ik heb een informatief dashboard gecreëerd voor Simplicate, waar werknemers gem
 - Ga naar de optie "Open" of "Open Folder" in de code-editor en selecteer een geschikte locatie op je computer om het project op te slaan.
 - Gebruik de ingebouwde terminal van je code-editor of open een externe terminal en navigeer naar de locatie waar je het project hebt opgeslagen.
 - Nadat de repository is gekloond, kun je de code openen in de code-editor en de gewenste wijzigingen aanbrengen. Houd er rekening mee dat je mogelijk de vereiste afhankelijkheden moet installeren door npm install uit te voeren in de terminal, zoals eerder vermeld.
-## Licentie ⚙️
+
 
 ## Bronnen 📚
 
-
+## Licentie ⚙️
 This project is licensed under the terms of the [MIT license](./LICENSE).
