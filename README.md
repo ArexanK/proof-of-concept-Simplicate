@@ -17,7 +17,7 @@
 Maak een Narrowcasting app met één of meer informatie-panelen, die getoond kan worden op een Tv- scherm in een kantoor van een bedrijf die Simplicate gebruikt.
 
 ## Gebruik 🖇
-Ik heb een informatief dashboard gecreëerd voor Simplicate, waar werknemers gemakkelijk up-to-date kunnen blijven. Het paneel bevat diverse secties met relevante informatie, waardoor medewerkers in één oogopslag belangrijke updates kunnen zien. Het is een efficiënte en gebruiksvriendelijke manier om teamleden op de hoogte te houden en hen te helpen bij het nemen van geïnformeerde beslissingen
+Ik heb een informatief dashboard gecreëerd voor Simplicate, waar werknemers gemakkelijk up-to-date kunnen blijven. Het paneel bevat diverse secties met relevante informatie, waardoor medewerkers in één oogopslag belangrijke updates kunnen zien. Het is een efficiënte en gebruiksvriendelijke manier om teamleden op de hoogte te brengen van alle highlights op kantoor.
 
 ## Kenmerken 📌
 - Tools
