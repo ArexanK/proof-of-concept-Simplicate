@@ -20,16 +20,14 @@ app.set('views', './views')
 app.use(express.static('public'))
 
 
-// Route for fetching API data
+
+
+
+// Route for fetching API data PARTNERS
 app.get("/", async (req, res) => {
     const response = await fetch('https://demofdnd.simplicate.app/api/v2/projects/project?limit=6', {
         headers: headers
     });
-
-    const response = await fetch('https://demofdnd.simplicate.app/api/v2/hrm/timetable?limit=5', {
-        headers: headers
-    });
-
 
     const data = await response.json();
 
@@ -39,6 +37,47 @@ app.get("/", async (req, res) => {
         data: data
     });
 })
+
+
+
+// Route for fetching API data PROJECTS
+
+// Maak een route voor de index
+app.get('/', (req, res) => {
+    const url = ("https://demofdnd.simplicate.nl/api/v2/crm/organization?limit=11", {
+        headers: headers
+    });
+
+
+    fetch(url, {
+            headers
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Request failed with status " + response.status);
+            }
+            return response.json();
+        })
+
+        .then(data => {
+            res.render('index', {
+                data
+            });
+            const dataArray = data.data;
+
+        })
+        .catch(error => {
+            console.error(error);
+            res.status(500).send('Error occurred');
+        });
+});
+
+
+
+
+
+
+
 
 // Stel het poortnummer in en start express
 app.set("port", process.env.PORT || 5050);
