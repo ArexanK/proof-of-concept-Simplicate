@@ -37,5 +37,7 @@ Ik heb een informatief dashboard gecreëerd voor Simplicate, waar werknemers gem
 
 ## Bronnen 📚
 
+
+
 ## Licentie ⚙️
 This project is licensed under the terms of the [MIT license](./LICENSE).
