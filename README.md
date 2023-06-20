@@ -24,7 +24,7 @@ Ik heb een informatief dashboard gecreëerd voor Simplicate, waar werknemers gem
 🖥️ Visual Studio Code 🖥️ Adaptable 🖥️ Figma
 
 - Gebruikte technieken
-💻 HTML 🎨 CSS 💡 JavaScript 🔋 Node.js ⚙️ Socket.io
+💻 HTML 🎨 CSS 💡 JavaScript 🔋 Node.js  ⚙️API
 
 ## Installatie 📲
 - Ga naar de repository
