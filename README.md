@@ -45,7 +45,7 @@ Ik heb een informatief dashboard gecreëerd voor Simplicate, waar werknemers gem
 - [SVG pie chart](https://www.smashingmagazine.com/2015/07/designing-simple-pie-charts-with-css/)
 - [Artikel understanding Rest Api's](https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/)
 - [MDN DOCS grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout)
-
+- [MDN DOCS container queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_container_queries)
 
 ## Licentie ⚙️
 This project is licensed under the terms of the [MIT license](./LICENSE).
