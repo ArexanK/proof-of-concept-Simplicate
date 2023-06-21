@@ -23,7 +23,7 @@ body {
     align-items: center;
     height: 100px;
 
-    padding: 10px;
+    padding: 30px;
 
 
 }
@@ -32,18 +32,14 @@ body {
 section {
     display: flex;
     justify-content: center;
-    margin: 80px auto;
+    margin: 60px auto;
     width: 600px;
     flex-direction: column;
     text-align: center;
     color: #fff;
 }
 
-section h1 {
-    font-size: 3.5rem;
-    position: relative;
-    bottom: 5rem;
-}
+
 
 section p {
     font-size: 1.4rem;
@@ -214,10 +210,7 @@ nav a:nth-child(1) {
 /*------------------------------------------GRID CONTAINER------------------------*/
 
 
-h2 {
-    justify-content: flex-start;
 
-}
 
 .grid-container {
     display: grid;
@@ -227,21 +220,155 @@ h2 {
     margin-left: 5em;
     margin-right: 5em;
     align-items: stretch;
-    margin-bottom: 5em;
+    margin-bottom: 6em;
 
 }
 
-.box {
-    background-color: white;
-    padding: 10px;
-    /* width: 400px;
-    height: 300px; */
-    border-radius: 1rem;
-    background-color: gainsboro;
 
+.box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
 }
 
 .box-title {
+    margin-bottom: .5rem;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.name-person,
+.organization-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    color: rgb(79, 79, 79);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.start-date,
+.organization-date {
+    color: rgb(128, 128, 128);
+    font-size: 1.2rem;
+}
+
+.name-person-birthday,
+.start-date-birthday {
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: -5px;
     font-size: 1rem;
+    color: rgb(79, 79, 79);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/*------------------------------------ EMPLOYMENT pie DIAGRAM-----------------------------*/
+
+
+.pie {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* background: conic-gradient(#655 40%, yellowgreen 0); */
+    background: purple;
+    align-items: center;
+    margin-left: 6rem;
+}
+
+
+.pie circle {
+    stroke: gold greenyellow;
+    stroke-width: 32;
+    stroke-dasharray: 25 25 0 50;
+    fill: none;
+}
+
+
+.legend {
+    display: flex;
+    justify-content: space-between;
 
 }
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    /* display: inline-block; */
+
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.green {
+    background-color: yellowgreen;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+
+
+
+
+/*-------------------------------------h1 title-------------------------*/
+
+
+
+.title {
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    padding-bottom: 1rem;
+
+
+
+}
+
+
+/*---------card----------------------*/
+
+.box__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+}
+
+/* 
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+} */

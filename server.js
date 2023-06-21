@@ -20,61 +20,41 @@ app.set('views', './views')
 app.use(express.static('public'))
 
 
+// Fetch Partners
+app.get('/', async (req, res) => {
+    const organizationResponse = await fetch('https://demofdnd.simplicate.app/api/v2/crm/organization?limit=4', {
+        headers: headers //authentication key + secret
+    });
+    const organizationData = await organizationResponse.json();
 
-
-
-// Route for fetching API data PARTNERS
-app.get("/", async (req, res) => {
-    const response = await fetch('https://demofdnd.simplicate.app/api/v2/projects/project?limit=6', {
+    // Fetch projects
+    const projectResponse = await fetch('https://demofdnd.simplicate.app/api/v2/projects/project?limit=8', {
         headers: headers
     });
+    const projectData = await projectResponse.json();
 
-    const data = await response.json();
 
-    console.log(data);
+    // Fetch verjaardagen
+    const birthdayResponse = await fetch('https://demofdnd.simplicate.nl/api/v2/crm/person?limit=4', {
+        headers: headers
+    });
+    const birthdayData = await birthdayResponse.json();
+
+    // Fetch verschillende contracten fulltime/parttime/oproepkracht
+
+    const employmentResponse = await fetch('https://demofdnd.simplicate.app/api/v2/hrm/employmenttype?limit=10', {
+        headers: headers
+    });
+    const employmentData = await employmentResponse.json();
 
     res.render("index", {
-        data: data
+        organizationData: organizationData,
+        projectData: projectData,
+        employmentData: employmentData,
+        birthdayData: birthdayData
+
     });
 })
-
-
-
-// Route for fetching API data PROJECTS
-
-// Maak een route voor de index
-app.get('/', (req, res) => {
-    const url = ("https://demofdnd.simplicate.nl/api/v2/crm/organization?limit=11", {
-        headers: headers
-    });
-
-
-    fetch(url, {
-            headers
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Request failed with status " + response.status);
-            }
-            return response.json();
-        })
-
-        .then(data => {
-            res.render('index', {
-                data
-            });
-            const dataArray = data.data;
-
-        })
-        .catch(error => {
-            console.error(error);
-            res.status(500).send('Error occurred');
-        });
-});
-
-
-
-
 
 
 

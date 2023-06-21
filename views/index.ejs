@@ -19,38 +19,111 @@
         </div>
         </section>
         
+        <!--------------------------------------h1 title------------------------------------>
+      <h1 class="title">Welkom op de informatie dashboard</h1>
+
+      
+
+
+
 
         <div class="grid-container">
+
+            <!-------------------------------partners----------------------------------->
             <div class="box">
-                <h1 class="box-title">Partners</h1>
-               
+                <h2 class="box-title">Partners</h2>
+               <ul>
+
+                  <% organizationData.data.forEach(function(organization) { %>
+                    <li>
+                        <p class="organization-name"><%= organization.name %></p>
+                        <p class="organization-date"><%= organization.created_at %></p>
+                    
+                    </li>
+                  <% }); %>
+</ul>
             </div>
+
+            <!---------------------lottiefiles animations--------------------------------------------->
+           
+
             <div class="box">
-                <h1 class="box-title">Aankomende verjaardagen</h1>
+                <h2 class="box-title"> </h2> 
+
+                <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_tlabaj67.json"  background="transparent"  speed="1"  style="width: 400px; height: 300px;"  loop autoplay></lottie-player>
             </div>
+     
+
+
+<!-------------------------------nieuwste projecten---------------------------------->
             <div class="box"style="grid-row: span 2;">
-            <h1 class="box-title"> Nieuwste projecten</h1>
+            <h2 class="box-title"> Nieuwste projecten</h2>
             <ul>
-            <% data.data.forEach(function(organization) { %>
-                <li><%= organization.name %> 
-                    <p><%= organization.created_at %></p</li>
-              <% }); %>
-         
-  
-              <li></li>
+                <% projectData.data.forEach(function(project) { %>
+                    <li>
+                        <p class="name-person"><%= project.name %></p>
+                        <p class="start-date"><%= project.start_date %></p>
+                    </li>
+                  <% }); %>
+             
             </ul>
+</div>
 
-
-
-        </div>
+<!----------------------------------employment type chart----------------------------------------->
+       
             <div class="box">
-                <h1 class="box-title">Geschreven Uren </h1>
+                <h2 class="box-title">Contracten </h2>
+
+            
+<svg viewbox="0 0 64 64" class="pie">
+    <circle r="25%" cx="50%" cy="50%" stroke-dashoffset="-5" stroke-dasharray="8 100" stroke="gold">
+    </circle>
+
+<circle r="25%" cx="50%" cy="50%" stroke-dasharray="85 100" stroke="yellowgreen"></circle>
+
+</svg>
+
+<div class="legend">
+    <div class="legend-item">
+      <div class="legend-color purple"></div>
+      <span>  <% employmentData.data.forEach(function(employment) { %>
+        <p><%= employment.name %> </p> <% }); %></span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color green"></div>
+      <span>  <% employmentData.data.forEach(function(employment) { %>
+        <p><%= employment.name %> </p> <% }); %></span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color yellow"></div>
+      <span>  <% employmentData.data.forEach(function(employment) { %>
+        <p><%= employment.name %> </p> <% }); %></span>
+    </div>
+  </div>     
             </div>
 
+
+
+
+
+            <!-----------aankomende verjaardagen------------------->
+           
             <div class="box">
-                <h1 class="box-title"> </h1> 
+                <h2 class="box-title">Aankomende verjaardagen</h2>
+                <div class="box__cards">
+                    <% birthdayData.data.forEach(function(birthday) { %>
+                        <div class="card">
+                            <!-- <img src="/public/images/avatar-1293744_1280.png" alt="profile-picture"> -->
+                            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_8pL7DHZXvo.json"  background="transparent"  speed="1"  style="width: 80px; height: 80px;"  loop  autoplay></lottie-player>
+                            <p class="name-person-birthday"><%= birthday.full_name %></p>
+                            <p class="start-date-birthday"><%= birthday.date_of_birth %></p>            
+                        </div>
+                    <% }); %>
+                </div>
             </div>
-          </div>
+
+<!----------------------------------background-annimatie------------------------------------------->
+
 
     <div class="area">
         <ul class="squares">
