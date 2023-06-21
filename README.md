@@ -17,6 +17,8 @@
 ## Beschrijving 📝
 Maak een Narrowcasting app met één of meer informatie-panelen, die getoond kan worden op een Tv- scherm in een kantoor van een bedrijf die Simplicate gebruikt.
 
+Narrowcasting verwijst naar het uitzenden van informatie op specifieke locaties met behulp van digitale schermen, zoals televisies, monitors of projectoren. Een narrowcasting app stelt gebruikers in staat om dynamische en gepersonaliseerde content te creëren, zoals reclameboodschappen, nieuwsupdates, evenementeninformatie, menu's, promoties en andere relevante informatie.
+
 (https://odd-gray-crow.cyclic.app/)
 
 ## Gebruik 🖇
