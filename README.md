@@ -2,7 +2,8 @@
 
 # Simplicate
 
-<img width="1436" alt="Screenshot 2023-06-21 at 15 23 42" src="https://github.com/ArexanK/proof-of-concept-Simplicate/assets/94745953/9e06c53c-7481-445e-9cba-f2db30f1fa02">
+<img width="1425" alt="Screenshot 2023-06-23 at 09 39 36" src="https://github.com/ArexanK/proof-of-concept-Simplicate/assets/94745953/ff3e573f-24a6-4f8d-8017-910a5087b140">
+
 
 
 ## Inhoudsopgave
