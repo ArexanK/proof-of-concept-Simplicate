@@ -41,7 +41,6 @@ app.get('/', async (req, res) => {
     const birthdayData = await birthdayResponse.json();
 
     // Fetch verschillende contracten fulltime/parttime/oproepkracht
-
     const employmentResponse = await fetch('https://demofdnd.simplicate.app/api/v2/hrm/employmenttype?limit=10', {
         headers: headers
     });
