@@ -61,8 +61,9 @@
             <ul>
                 <% projectData.data.forEach(function(project) { %>
                     <li>
-                        <p class="name-person"><%= project.name %></p>
                         <p class="start-date"><%= project.start_date %></p>
+                        <p class="name-person"><%= project.name %></p>
+                     
                     </li>
                   <% }); %>
              
@@ -83,25 +84,24 @@
 
 </svg>
 
-<div class="legend">
-    <div class="legend-item">
-      <div class="legend-color purple"></div>
-      <span>  <% employmentData.data.forEach(function(employment) { %>
-        <p><%= employment.name %> </p> <% }); %></span>
-    </div>
-    <div class="legend-item">
-      <div class="legend-color green"></div>
-      <span>  <% employmentData.data.forEach(function(employment) { %>
-        <p><%= employment.name %> </p> <% }); %></span>
-    </div>
-    <div class="legend-item">
-      <div class="legend-color yellow"></div>
-      <span>  <% employmentData.data.forEach(function(employment) { %>
-        <p><%= employment.name %> </p> <% }); %></span>
-    </div>
-  </div>     
-            </div>
 
+             <div class="legend">
+                <div class="legend-item">
+                  <div class="legend-color-column">
+                    <div class="legend-color legend-color-purple"></div>
+                    <div class="legend-color legend-color-green"></div> 
+                    <div class="legend-color legend-color-yellow"></div>
+                </div>
+                
+                  <span class="legend-names">
+                    <% employmentData.data.forEach(function(employment) { %>
+                      <p><%= employment.name %></p>
+                    <% }); %>
+                  </span>
+               
+                </div>
+              </div>
+              </div>
 
 
 

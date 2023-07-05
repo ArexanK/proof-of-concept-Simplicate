@@ -28,7 +28,7 @@ app.get('/', async (req, res) => {
     const organizationData = await organizationResponse.json();
 
     // Fetch projects
-    const projectResponse = await fetch('https://demofdnd.simplicate.app/api/v2/projects/project?limit=8', {
+    const projectResponse = await fetch('https://demofdnd.simplicate.app/api/v2/projects/project?limit=9', {
         headers: headers
     });
     const projectData = await projectResponse.json();

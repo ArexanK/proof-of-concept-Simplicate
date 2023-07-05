@@ -225,6 +225,7 @@ nav a:nth-child(1) {
 }
 
 
+
 .box {
     border: 1px solid #ccc;
     padding: 10px;
@@ -243,7 +244,7 @@ nav a:nth-child(1) {
 .organization-name {
     font-weight: bold;
     margin-bottom: 5px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: rgb(79, 79, 79);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -271,12 +272,16 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+
 }
 
 li {
     margin-bottom: 10px;
 }
 
+p {
+    margin-top: 3px;
+}
 
 
 
@@ -293,7 +298,7 @@ li {
     /* background: conic-gradient(#655 40%, yellowgreen 0); */
     background: purple;
     align-items: center;
-    margin-left: 6rem;
+    margin-left: 8rem;
 }
 
 
@@ -304,40 +309,51 @@ li {
     fill: none;
 }
 
+/*-----------------legend part---------------------------*/
+
+
 
 .legend {
     display: flex;
     justify-content: space-between;
-
 }
+
 
 .legend-item {
     display: flex;
     align-items: center;
-    margin-right: 20px;
-    /* display: inline-block; */
+    margin-top: -50px;
 
+
+}
+
+.legend-color-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .legend-color {
     width: 20px;
     height: 20px;
-    margin-right: 5px;
-    border-radius: 50%;
+    margin-bottom: 5px;
 }
 
-.purple {
+.legend-color-purple {
     background-color: purple;
 }
 
-.green {
-    background-color: yellowgreen;
+.legend-color-green {
+    background-color: rgb(158, 235, 44);
 }
 
-.yellow {
+.legend-color-yellow {
     background-color: yellow;
 }
 
+.legend-names {
+    margin-left: 10px;
+}
 
 
 
@@ -352,7 +368,7 @@ li {
     text-align: center;
     color: white;
     padding-bottom: 1rem;
-    
+
 
 
 
@@ -365,7 +381,7 @@ li {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     align-items: center;
-    
+
 }
 
 
@@ -413,6 +429,7 @@ li {
 
     @media (min-width: 1800px) {
         .grid-container {
+            
             font-size: 1.4em;
         }
     }
