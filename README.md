@@ -3,7 +3,8 @@
 # Simplicate
 
 
-![mock simplicate](https://github.com/ArexanK/proof-of-concept-Simplicate/assets/94745953/2ee8f52e-312f-48f1-98c2-b9fe7d5cd1e9)
+
+![IMG_C072DCF78DC0-1](https://github.com/ArexanK/proof-of-concept-Simplicate/assets/94745953/6ae48cd2-25dd-4aa9-87a2-70dcae6e326a)
 
 
 
