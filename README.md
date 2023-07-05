@@ -2,7 +2,8 @@
 
 # Simplicate
 
-<img width="1440" alt="Screenshot 2023-07-05 at 11 10 04" src="https://github.com/ArexanK/proof-of-concept-Simplicate/assets/94745953/76448ca5-1135-4a3d-8699-645b00706883">
+
+![mock simplicate](https://github.com/ArexanK/proof-of-concept-Simplicate/assets/94745953/2ee8f52e-312f-48f1-98c2-b9fe7d5cd1e9)
 
 
 
