@@ -226,7 +226,21 @@ nav a:nth-child(1) {
 
 
 
+/* .box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+.box-title {
+    margin-bottom: .5rem;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+} */
+
 .box {
+    position: relative;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
@@ -238,6 +252,22 @@ nav a:nth-child(1) {
     padding-bottom: 5px;
     border-bottom: 1px solid #ccc;
 }
+
+.lottie-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+
+
+
+
+
 
 
 .name-person,
@@ -388,49 +418,36 @@ p {
 
 /*--------------------------------------MEDIA QUERIES----------------------*/
 
-/* @media (min-width: 800px) {
+
+@media (max-width: 767px) {
     .grid-container {
-        grid-template-columns: 4fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 200px);
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 3em;
+    }
+
+
+}
+
+/* Media query for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 250px);
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-bottom: 4em;
     }
 }
 
-
-
-@media (min-width: 920px) {
-    header .page-title {
-      flex-direction: row;
-      justify-content: space-between;
-      width: 100%;
-    }
-  }
-
-@media (min-width: 1320px) {
-    .grid-container {
-        grid-template-columns: 4fr 1fr;
-    }
-
-
-
-    @media (min-width: 1350px) {
-
-        html,
-        body {
-            overflow: hidden;
-        }
-
-    }
-
-
-    @media (min-width: 1530px) {
-        .grid-container {
-            grid-template-columns: 4fr 1fr;
-        }
-    }
-
-    @media (min-width: 1800px) {
-        .grid-container {
-            
-            font-size: 1.4em;
-        }
-    }
+/* Media query for laptops and desktops */
+/* @media (min-width: 1024px) and (max-width: 1439px) {
+    .grid-container {}
 } */
+
+
+/* Media query for large screens and TVs */
+/* @media (min-width: 1440px) {
+    .grid-container {} */

@@ -22,7 +22,7 @@ app.use(express.static('public'))
 
 // Fetch Partners
 app.get('/', async (req, res) => {
-    const organizationResponse = await fetch('https://demofdnd.simplicate.app/api/v2/crm/organization?limit=4', {
+    const organizationResponse = await fetch('https://demofdnd.simplicate.app/api/v2/crm/organization?limit=3', {
         headers: headers //authentication key + secret
     });
     const organizationData = await organizationResponse.json();
