@@ -5,6 +5,7 @@
 
 ![mock simplicate](https://github.com/ArexanK/proof-of-concept-Simplicate/assets/94745953/2ee8f52e-312f-48f1-98c2-b9fe7d5cd1e9)
 
+<img width="540" alt="71D254E3-8407-43B3-B3CC-F4B51A637DCD" src="https://github.com/ArexanK/proof-of-concept-Simplicate/assets/94745953/30fe638e-a082-416b-bc14-8637a1f70fd5">
 
 
 
